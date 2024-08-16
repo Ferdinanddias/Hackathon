@@ -1,0 +1,181 @@
+main{
+    padding: 20px;
+}
+body{
+    min-height: 100vh;
+    background-color: #e3e9f7;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+}
+#btn-intro {
+    background-color: blue; /* Cor de fundo inicial */
+    color: white; /* Cor do texto inicial */
+    border: 1px solid blue; /* Borda inicial */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transições suaves */
+    border-radius: 7px;
+}
+#btn-intro:hover {
+    background-color: transparent; /* Fundo transparente ao passar o mouse */
+    color: blue; /* Texto azul ao passar o mouse */
+    border-color: blue; /* Borda azul ao passar o mouse */
+    border-radius: 7px;
+}
+#btnPromptChanger {
+    background-color: rgb(255, 62, 48); /* Cor de fundo inicial */
+    color: white; /* Cor do texto inicial */
+    border: 1px solid rgb(255, 62, 48); /* Borda inicial */
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transições suaves */
+    border-radius: 7px;
+}
+#btnPromptChanger:hover {
+    background-color: transparent; /* Fundo transparente ao passar o mouse */
+    color: rgb(255, 62, 48); /* Texto azul ao passar o mouse */
+    border-color: rgb(255, 62, 48); /* Borda azul ao passar o mouse */
+    border-radius: 7px;
+}
+#intro{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-left: solid rgb(23, 107, 239) 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+
+
+#left-intro{
+    flex: 1 1 100%;
+    padding: 20px;
+}
+#left-1, #left-2, #right-1, #rigth-2 {
+    flex: 1 1 50%;
+    padding: 10px;
+}
+#rigth-intro, #right-1, #left-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+#depositions {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-left: solid rgb(23, 156, 82) 10px;
+    
+}
+
+
+
+#cadastro{
+    background-color: rgb(255, 255, 255);
+    border-left: solid rgb(247, 181, 41) 10px;
+    padding: 30px;
+}
+
+
+#about{
+    background-color: rgb(255, 255, 255);
+    border-left: solid rgb(255, 6, 41) 10px;
+    padding: 30px;
+}
+#prompts{
+    background-color: #ffffff;
+    border-left: solid rgb(255, 62, 48) 10px;
+    padding: 30px;
+}
+
+#cta{
+    border-radius: 10px;
+}
+#cta p{
+    color: gainsboro;
+}
+#img-group{
+    width: 90%; 
+    height: 90%;
+    border-radius: 15px;
+}
+#img-depositions {
+    border-radius: 50%;
+    width: 60%;
+    background-size: cover;
+    
+}
+.card-depositions{
+    background-color: transparent;
+    box-shadow: none;
+    border: 0;
+    margin-bottom: 20px;
+}
+.card-title, .card-text {
+    text-align: center;
+}
+#cards-depositions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#video-intro{
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+#video-module{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+#footer img {
+    max-width: 150px;
+}
+/* Media Queries */
+@media (min-width: 768px) {
+    #left-intro, #rigth-intro {
+        flex: 1 1 50%;
+    }
+    #left-1, #left-2, #right-1, #rigth-2 {
+        flex: 1 1 25%;
+    }
+}
+@media (min-width: 992px) {
+    #intro {
+        flex-wrap: nowrap;
+    }
+    #modules {
+        flex-wrap: nowrap;
+    }
+    #left-1, #left-2, #right-1, #rigth-2 {
+        padding: 30px;
+    }
+    .card {
+        width: 18rem;
+        margin: 15px;
+    }
+}
+#div-oculta{
+    visibility: hidden;
+    display: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f7b62946;
+}
+
+.accordion-button {
+    background-color: white;
+}
